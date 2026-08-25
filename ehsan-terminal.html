@@ -60,7 +60,7 @@
   .line.err{color:var(--err);}
   .line.gap{height:10px;}
 
-  .ascii{color:var(--accent); font-size:.72rem; line-height:1.35; margin-bottom:6px;}
+  .ascii{color:var(--accent); font-size:.72rem; line-height:1.35; margin-bottom:6px; white-space:pre;}
 
   a{color:var(--clay); text-decoration:none; border-bottom:1px dashed var(--clay); cursor:pointer;}
   a:hover{color:var(--accent); border-bottom-color:var(--accent);}
@@ -471,6 +471,17 @@
   screen.appendChild(asciiEl);
   addLine("Welcome to Ehsan Noorbakhsh's interactive resume.", 'accent');
   addLine("Type: help to see available commands", 'dim');
+  addLine('Available commands:', 'accent');
+        addLine('  about       — about me');
+        addLine('  education   — education');
+        addLine('  skills      — technical skills');
+        addLine('  projects    — open-source projects');
+        addLine('  certificates — certificates');
+        addLine('  contact     — contact info');
+        addLine('  whoami      — who am I?');
+        addLine('  ls          — list files');
+        addLine('  lang        — switch language (fa/en)');
+        addLine('  clear       — clear screen');
   addGap();
 
   input.focus();
