@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ehsan Noorbakhsh — Resume</title>
+  <meta name="description" content="Interactive terminal resume of Ehsan Noorbakhsh, Computer Engineering student.">
+  <meta name="keywords" content="Ehsan Noorbakhsh, resume, portfolio, computer engineering">
+
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header">
+    <a href="#hero" class="logo">
+      <span class="sitename">EN</span>
+    </a>
+    <nav class="header-links">
+      <a href="#terminal" data-i18n="navTerminal">Terminal</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <a href="https://github.com/Ehsan-999" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero">
+      <div class="intro">
+        <p class="intro-kicker" data-i18n="kicker">Resume · Portfolio</p>
+        <h1 class="intro-name" data-i18n-html="name">Ehsan<br>Noorbakhsh</h1>
+        <p class="intro-role" data-i18n="role">Computer Engineering</p>
+        <p class="intro-place" data-i18n="place">University of Qom</p>
+        <p class="intro-lead" data-i18n="lead">Explore my background through an interactive terminal — type a command and dig in.</p>
+      </div>
+
+      <div class="terminal" id="terminal" dir="ltr" aria-label="Interactive resume terminal">
+        <div id="titlebar">
+          <div class="dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></div>
+          <div class="name">ehsan@resume: ~</div>
+          <button type="button" id="lang-badge" aria-label="Switch language">EN</button>
+        </div>
+
+        <div id="screen"></div>
+
+        <div class="input-wrap">
+          <div id="input-row">
+            <span class="prompt">guest@ehsan:~$</span>
+            <input id="cmd-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="terminal input">
+          </div>
+        </div>
+
+        <div id="hint">Type <b>help</b> to get started · switch language: <b>lang fa</b></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 data-i18n="contactTitle">Contact</h2>
+      <p class="contact-lead" data-i18n="contactLead">Say hello — or jump into one of these.</p>
+      <ul class="contact-list">
+        <li>
+          <span data-i18n="labelEmail">Email</span>
+          <a href="mailto:ehsannoorbakhsh864@gmail.com">ehsannoorbakhsh864@gmail.com</a>
+        </li>
+        <li>
+          <span data-i18n="labelPhone">Phone</span>
+          <a href="tel:+989052818292">0905 281 8292</a>
+        </li>
+        <li>
+          <span data-i18n="labelLocation">Location</span>
+          <span class="contact-plain" data-i18n="locationValue">Qom, Iran</span>
+        </li>
+        <li>
+          <span>GitHub</span>
+          <a href="https://github.com/Ehsan-999" target="_blank" rel="noopener noreferrer">github.com/Ehsan-999</a>
+        </li>
+        <li>
+          <span>LinkedIn</span>
+          <a href="https://www.linkedin.com/in/ehsan-noorbakhsh-a4a32a203" target="_blank" rel="noopener noreferrer">linkedin.com/in/ehsannoorbakhsh</a>
+        </li>
+        <li>
+          <span>Telegram</span>
+          <a href="https://t.me/Ehsan2k" target="_blank" rel="noopener noreferrer">t.me/Ehsan2k</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <p>© <span id="year"></span> <strong data-i18n="footerName">Ehsan Noorbakhsh</strong></p>
+
+  </footer>
+
+  <div id="preloader"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/terminal.js"></script>
+
+</body>
+
+</html>
