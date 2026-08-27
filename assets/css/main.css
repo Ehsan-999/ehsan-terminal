@@ -156,7 +156,12 @@ h4 {
   color: #fff;
   text-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
-
+@media (max-width: 768px) {
+  .intro-name {
+    font-size: clamp(1.8rem, 10vw, 2.5rem);
+    white-space: nowrap;
+  }
+}
 .intro-role {
   margin: 18px 0 0;
   font-family: "Syne", "Vazirmatn", sans-serif;
